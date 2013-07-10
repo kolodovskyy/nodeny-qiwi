@@ -9,7 +9,7 @@
 - Создать файл /usr/local/nodeny/module/qiwi.log и установить права записи для веб-сервера
 - Установить пароль на доступ к скрипту
 
-<Directory /usr/local/www/apache22/cgi-bin/qiwi>
+```<Directory /usr/local/www/apache22/cgi-bin/qiwi>
   AuthName "QIWI"
   AuthType basic
   require valid-user
@@ -18,6 +18,7 @@
 
 htpasswd -c /usr/local/www/apache22/cgi-bin/qiwi/.htpasswd qiwi
 Password: PASSWORD
+```
 
 В качестве платежного кода используется код, который выводится у каждого абонента в его статистике внизу ("Ваш персональный платежный код: …")
 
